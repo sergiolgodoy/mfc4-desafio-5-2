@@ -3,9 +3,10 @@ version: '3'
 services:
 
   app:
-    build: .
-    entrypoint: ./.docker/entrypoint.sh
-    container_name: micro-api-app
+    build: 
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: mfc4-desafio-5-2
     environment:
       - CHOKIDAR_USEPOLLING=true
     ports:

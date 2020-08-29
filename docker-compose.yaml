@@ -4,8 +4,7 @@ services:
 
   app:
     build: .
-    entrypoint: ./.docker/entrypoint.sh
-    container_name: micro-api-app
+    container_name: mfc4-desafio-5-2
     environment:
       - CHOKIDAR_USEPOLLING=true
     ports:
